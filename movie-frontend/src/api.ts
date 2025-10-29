@@ -1,7 +1,7 @@
 import axios from 'axios';
 import type { Movie } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://movies-app-ten-flame.vercel.app';
 
 
 export async function fetchMovies(page = 1, limit = 10) {

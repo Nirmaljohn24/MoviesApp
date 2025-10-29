@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5000/api/movies';
+const API_BASE = 'https://movies-app-ten-flame.vercel.app/api/movies';
 
 export async function fetchMovies(page = 1, limit = 10) {
   const res = await axios.get(`${API_BASE}?page=${page}&limit=${limit}`);
