@@ -46,3 +46,31 @@ npm run dev
 
 ```
 ---
+
+## App will run on:
+
+***Frontend*** → http://localhost:5173
+***Backend*** → http://localhost:5000
+
+---
+
+## Image Upload
+
+This app uses Multer to handle file uploads.
+
+Uploaded images are stored in the uploads/ directory.
+
+The file path is saved in the MongoDB collection for each movie.
+
+Example structure:
+
+---
+
+backend/
+├── uploads/
+│   ├── movie1.jpg
+│   ├── movie2.png
+
+---
+
+---
