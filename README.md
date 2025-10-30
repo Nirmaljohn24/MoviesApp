@@ -24,6 +24,47 @@ It allows users to **add, edit, delete, and view** movies, with **image upload**
 
 ---
 
+## Project Folder Structure
+
+```
+MoviesApp/
+├── backend/
+│   ├── models/
+│   │   └── Movie.js
+│   ├── routes/
+│   │   └── movieRoutes.js
+│   ├── uploads/
+│   ├── index.js
+│   └── .env
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.tsx
+│   └── package.json
+└── README.md
+```
+---
+
+## Image Upload
+
+This app uses Multer to handle file uploads.
+
+Uploaded images are stored in the uploads/ directory.
+
+The file path is saved in the MongoDB collection for each movie.
+
+Example structure:
+
+```
+backend/
+├── uploads/
+│   ├── movie1.jpg
+│   ├── movie2.png
+```
+
+---
+
 ##  Installation 
 
 ```bash
@@ -51,26 +92,5 @@ npm run dev
 
 ***Frontend*** → http://localhost:5173
 ***Backend*** → http://localhost:5000
-
----
-
-## Image Upload
-
-This app uses Multer to handle file uploads.
-
-Uploaded images are stored in the uploads/ directory.
-
-The file path is saved in the MongoDB collection for each movie.
-
-Example structure:
-
----
-
-backend/
-├── uploads/
-│   ├── movie1.jpg
-│   ├── movie2.png
-
----
 
 ---
